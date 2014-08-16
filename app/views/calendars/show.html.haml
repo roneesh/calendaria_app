@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @calendar.user_id
+
+= link_to 'Edit', edit_calendar_path(@calendar)
+\|
+= link_to 'Back', calendars_path

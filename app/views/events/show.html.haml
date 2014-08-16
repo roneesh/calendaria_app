@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Calendar:
+  = @event.calendar_id
+%p
+  %b What:
+  = @event.what
+%p
+  %b Where:
+  = @event.where
+
+= link_to 'Edit', edit_event_path(@event)
+\|
+= link_to 'Back', events_path

@@ -4,6 +4,16 @@
   %b User:
   = @calendar.user_id
 
+%h2 Events
+
+%ul
+- @events.each do |event|
+  %l1= event.what
+  %br
+
+%br
+%br
+%br
 = link_to 'Edit', edit_calendar_path(@calendar)
 \|
 = link_to 'Back', calendars_path

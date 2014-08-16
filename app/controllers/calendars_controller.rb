@@ -10,6 +10,7 @@ class CalendarsController < ApplicationController
   # GET /calendars/1
   # GET /calendars/1.json
   def show
+    @events = Event.where(calendar_id: current_user.calendar.id)
   end
 
   # GET /calendars/new
